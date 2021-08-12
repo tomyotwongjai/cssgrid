@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+}
+html,
+body{
+    background: url(/img/ocean.jpg) no-repeat center center fixed;
+    color: #fff;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+.container > div{
+    height: 260px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.bg1{
+    background: url(/img/weight.jpg) no-repeat center center;
+}
+.bg2{
+    background: url(/img/cardio.jpg);
+}
+.bg3{
+    background: url(/img/quote1.jpg);
+}
+.bg4{
+    background: url(/img/ocean.jpg);
+}
+
+container > div:nth-of-type(1){
+    grid-area: span 2;
+}
+
